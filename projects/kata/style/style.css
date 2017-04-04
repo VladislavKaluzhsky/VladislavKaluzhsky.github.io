@@ -1,0 +1,289 @@
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^GLOBAL STYLES^^^^^^^^^^^^^^^^^^^^*/
+
+html {
+	font-size:62.5%;
+}
+body{
+	font:2rem/2rem 'Open Sans',sans-serif;
+}
+
+.wrapper{
+	background:url('../images/design/back.jpg') center/cover no-repeat;
+	width:100%;
+	overflow: hidden;
+}
+b{
+	color:#e85356;
+	font:400 5rem/5rem 'Open Sans',sans-serif;
+}
+p{
+	font:400 1.4rem/2rem 'Open Sans',sans-serif;
+}
+.h1{
+	font:300 5rem/5rem 'Open Sans',sans-serif;
+	color:#343434;
+}
+.h2{
+	font:400 3rem/3rem 'Open Sans',sans-serif;
+	color:#ffffff;
+	padding: 0 15px 20px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/* HEADER
+=============================================*/
+
+.header{
+	background-color:#fff;
+	width: 100%;
+}
+.header p{
+	padding: 0 0 0 4px;
+	margin: -10px 0 0;
+	font:400 1.8rem/2rem 'Open Sans',sans-serif;
+}
+/* NAVBAR */
+ 
+.header .navbar,.navbar-toggle{
+ 	background: none;
+ 	border: none;
+}
+.header .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: #fff;
+}
+.header .navbar-collapse{
+	text-align: center;
+	
+}
+.header .navbar-default .navbar-nav li a{
+	font:300 2rem/2rem 'Open Sans',sans-serif;
+	color:#c8c8c8;
+}
+.header .navbar-default .navbar-nav li a:hover{
+	color:#827e7e
+}
+/* NAVBAR END */
+
+/*                                 HEADER END
+====================================================*/
+
+
+/*               SECTION1
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.section1{
+	padding: 15px;
+}
+.section1 .h1{
+	color:#efefef;
+	text-align: center;
+}
+.section1 .text{
+	color:#696969;
+	text-align: justify;
+}
+.section1 .text b{
+	font:400 1.8rem/2rem 'Open Sans',sans-serif;
+}
+/*KWICKS*/
+.kwicks{
+	height: 515px;
+	width:100%;
+}
+/*KWICKS*/
+
+/*               SECTION1 END
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/*            SECTION 2
+______________________________________*/
+
+.section2{
+	background-color:rgb(0,0,0);
+	text-align: center;
+	padding: 15px;
+}
+.section2 .item{
+	margin: 0 0 3rem;
+}
+.section2 .item img{
+	margin: 0 0 1rem;
+}
+.textwhite{
+	color:#fff;
+}
+.section2 .item .text{
+	color:#5d5d5d;
+	margin: 0 0 2.5rem;
+	padding: 0 10%;
+}
+.section2 .item .read{
+	padding: 1rem 2rem;
+	background-color:rgb(232,83,86);
+	color:#fff;
+	text-decoration: none;
+}
+/*            SECTION 2 END
+________________________________________*/
+
+             
+/*             SECTION 3
+=========================================*/
+
+.section3{
+	padding: 15px;
+	text-align: center;
+}
+.section3 .aboutme{
+	margin: 0 auto;
+}
+.section3 .aboutme .photo{
+	margin: 0 0 2rem;
+}
+.section3 .aboutme .text{
+	margin: 0 0 1rem;
+	padding: 0 15px 10px;
+}
+.section3 .aboutme .text::after{
+	position: absolute;
+	content: '';
+	left:0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(44,44,44,0.75);
+-moz-box-shadow: 0px 1px 0px 0px rgba(44,44,44,0.75);
+box-shadow: 0px 1px 0px 0px rgba(44,44,44,0.75);
+}
+.section3 .subjects{
+	display: inline-block;
+	overflow: hidden;
+	text-align: left;
+}
+.section3 .subjects .item{
+	font:1.4rem/2rem 'Open Sans',sans-serif;
+	color:#e85356;
+	display: block;
+	margin: 0 0 1rem;
+}
+.section3 .photoshoots{
+	margin: 0 auto;
+}
+.section3 .photoshoots img{
+	margin: 0 0 3rem;
+}
+
+/*             SECTION 3 END
+===========================================*/
+
+/*   FOOTER   */
+
+.footer{
+	background-color: #fff;
+	padding: 2% 0;
+}
+.footer b{
+	font:1.4rem/2rem 'Open Sans',sans-serif;
+}
+.footer .links{
+	text-align: right;
+}
+.footer .links .f{
+	background: url('../images/design/f.png') center/cover no-repeat;
+	width:31px;
+	height: 31px;
+	display: inline-block;
+}
+.footer .links .tochka{
+	background: url('../images/design/tochka.png') center/cover no-repeat;
+	width:31px;
+	height: 31px;
+	display: inline-block;
+}
+.footer .links .twitter{
+	background: url('../images/design/twitter.png') center/cover no-repeat;
+	width:31px;
+	height: 31px;
+	display: inline-block;
+}
+.footer .links .google{
+	background: url('../images/design/google.png') center/cover no-repeat;
+	width:31px;
+	height: 31px;
+	display: inline-block;
+}
+
+
+/*   FOOTER END  */
+
+              
+              /* 750 */
+
+
+@media screen and (min-width:750px){
+
+.header .navbar-collapse{
+	padding: 3rem 0 0 3rem;
+}
+.section3{
+	text-align: left;
+}
+
+}
+
+@media screen and (min-width:970px){
+
+.header{
+	padding: 1% 0 2%;
+}
+.header .navbar-collapse{
+	padding: 3rem 0 0 1rem;
+}
+.section1{
+	padding: 4rem 1.5rem 5rem;
+}
+.section1 .h1{
+	padding: 0;
+	text-align: left;
+}
+.section1 .text{
+	padding: 0 0 0 15px;
+}
+.section2 .item .text{
+	margin:0 0 3rem;
+}
+
+.kwicks{
+	margin:0 0 5rem;
+}
+
+}
+
+@media screen and (min-width:1170px){
+
+.section1 .h1{
+	position: relative;
+}
+.section1 .h1::after{
+	position: absolute;
+	bottom:-10px;
+	right:0;
+	content: '';
+	height: 70px;
+	border: 1px solid #424242;
+
+
+}
+.section2{
+	text-align: left;
+	padding: 2% 15px 3%;
+}
+.section2 .item .text{
+	padding: 0;
+}
+.section3{
+	padding: 2% 15px 3%;
+}
+
+}

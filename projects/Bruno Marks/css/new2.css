@@ -1,0 +1,397 @@
+/*================GLOBAL STYLES================*/
+* {
+	box-sizing:border-box;
+}
+html {
+	font-size:62.5%;
+	}
+@font-face{
+	font-family:'Taiga';
+	src:url('../Шрифты/taiga.otf');
+}
+/*================GLOBAL STYLES================*/
+
+/*----------------------------------------------
+-----------------SECTION1 HEADER---------------*/
+.section1{
+	height:100vh;
+	background:url('../images/design/img1.jpg') center/cover no-repeat;
+	position:relative;
+}
+.section1::before{
+	width:100%;
+	height:100vh;
+	background:rgba(0,0,0,0.6);
+	content:"";
+	top:0;
+	left:0;
+	position:absolute;
+}
+/*+++++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++*/
+/*.nav{
+	position:fixed;
+}
+.nav .humb{
+	width:32px;
+	height:32px;
+	border-bottom:4px solid #fff;
+	display:block;
+	z-index:2;
+	background:rgba(0,0,0,0.5);
+}
+.nav .humb::before{
+	display:block;
+	content:"";
+	border-bottom:4px solid #fff;
+	border-top:4px solid #fff;
+	height:10px;
+}
+.nav ul{
+	left:-100%;
+    top:0;
+    position:relative;
+    border-right:2px solid #000;
+	margin:0;
+    padding:0;
+    background:rgba(0,0,0,0.8);
+    transition:left 1s;
+    list-style:none;
+	text-align:left;
+}
+.nav ul li:first-child {
+    padding-top:52px;
+}
+.nav ul li {
+    border-bottom:2px solid #000;
+}
+.nav ul li:last-child {
+    border:none;
+}
+.nav ul li a {
+    display:block;
+    font:18px/32px 'Arial Narrow';
+    color:#000;
+    padding:0 5vw;
+}
+*/
+
+/*+++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++++++*/
+.head{
+	position:relative;
+	z-index:2;
+	text-align: center;
+	padding: 5%;
+}
+.head img{
+	border-radius:50%;
+	box-shadow: 0px 0px 0px 13px rgba(151,168,189,0.18);
+	width:250px;
+	height:250px;
+}
+h1{
+	font:44px/40px taiga;
+	padding:2rem 0 0 0;
+	margin:0 0 3rem 0;
+	color:rgb(243,243,243);
+}
+.section1 p{
+	font:24px/24px raleway;
+	color:rgb(31,152,173);	
+	margin:0 0 2rem 0;
+}
+.links a{
+	font:24px/30px raleway;
+	color:rgb(243,243,243);
+	display:inline-block;
+	border:2px solid #fff;
+	border-radius:1rem;
+	text-decoration:none;
+	width:16rem;
+	min-height:5.5rem;
+	margin:0 2rem;
+	padding:.8rem 0 0 0;
+	text-align: center;
+}
+/*----------------------------------------------
+-----------------SECTION1 HEADER END---------------*/
+
+/***************SECTION2 INFO*******************/
+.section2{
+	padding:5%;
+}
+.h2{
+	font:900 40px/40px raleway bold;
+	text-align:center;
+	text-transform:uppercase;
+	color:rgb(89,89,89);
+	position:relative;
+	padding:0 0 5rem 0;
+}
+.h2::after{
+	position:absolute;
+	width:10rem;
+	height:3rem;
+	content:"";
+	bottom:0;
+	left:calc(50% - 5rem);
+	color:rgb(49,196,221);
+	border-top:8px solid;
+}
+.section2 h3,h4{
+	font:700 24px/30px raleway;
+	color:rgb(89,89,89);
+	text-transform:uppercase;
+}
+.section2 h4{
+	font:400 24px/30px raleway;
+}
+.section2 p{
+	font:300 16px/30px raleway;
+	color:rgb(89,89,89);
+	text-transform:uppercase;
+	text-align:left;
+}
+/*****************SECTION2 END******************/
+
+/*================SECTION 3====================*/
+.section3{
+	background:url('../images/design/img2.jpg') center/cover no-repeat;
+	background-attachment:fixed;
+	padding:5% 5% 2%;
+	position:relative;
+	
+}
+.section3::before{
+	position:absolute;
+	width:100%;
+	height:100%;
+	content:"";
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.5);
+	z-index:1;
+}
+.section3 h4,p{
+	font:700 22px/24px raleway;
+	color:rgb(243,243,243);
+	text-align:center;
+}
+.section3 p{
+	font:300 18px/24px raleway;
+	text-transform:uppercase;
+}
+.section3 .h2{
+	color:rgb(243,243,243);
+}
+.services{
+	position:relative;
+	z-index:2;
+}
+         
+		 /*      Article     */
+.section3 article{
+	position:relative;
+	margin:0 0 6rem 0;
+}
+.section3 article:first-child{
+	margin:3rem 0 6rem 0;
+}
+.section3 .info1::before{
+	background:url('../images/content/task1.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+.section3 .info2::before{
+	background:url('../images/content/task2.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+.section3 .info3::before{
+	background:url('../images/content/task3.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+.section3 .info4::before{
+	background:url('../images/content/task4.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+.section3 .info5::before{
+	background:url('../images/content/task5.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+.section3 .info6::before{
+	background:url('../images/content/task6.png') center/cover no-repeat;
+	position:absolute;
+	width:56px;
+	height:56px;
+	content:"";
+	left:calc(50% - 28px);
+	top:-6rem;
+}
+/*==========================SECTION3 END====================*/
+
+/*...........................................................
+............................SECTION4........................*/
+.section4{
+	padding:5%;
+}
+.section4 img{
+	width:100%;
+}
+.portfolio{
+	text-align:center;
+}
+.section4 .images{
+	position:relative;
+	width:100%;
+}
+.section4 .items{
+	position:absolute;
+	text-align:center;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+}
+.section4  .items p{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	background:rgba(0,0,0,0.2);
+	border-radius:50%;
+	margin:50px 0 0 0;
+	font:900 32px/50px tahoma bold;
+}
+.section4 h4,h5{
+	font:300 24px/24px raleway;
+	text-decoration:none;
+	color:rgb(207,207,207);
+}
+.section4 h5{
+	font:400 16px/24px raleway;
+}
+.section4 a{
+	text-decoration:none;
+}
+/*...........................SECTION4 END.................
+...........................................................*/
+                         
+						    /*MEDIA 768*/
+@media screen and (min-width:768px){
+
+/*==================SECTION1================*/
+.head{
+	padding: 15% 0 5%;
+}
+.head img{
+	width:330px;
+	height:330px;
+}
+h1{
+	padding:4rem 0 0 0;
+}
+/*=================SECTION1 END=================*/
+
+
+/*....................SECTION3.........................*/
+
+.flex{
+	display:flex;
+	justify-content:space-between;
+	flex-flow:row wrap;
+	padding:8rem 0 0;
+}
+.section3 article:first-child{
+	margin:0 0 8rem 0;
+}
+.section3 article{
+	width:calc((100% - 15%) / 3);
+	margin:0 0 8rem 0;
+}
+/*......................SECTION3 END.....................*/
+
+/*::::::::::::::::::::::SECTION4:::::::::::::::::::::::::*/
+.section4 img{
+	height:230px;
+}
+.section4{
+	padding:5%;
+}
+.section4 .images{
+	width:50%;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+}
+/*::::::::::::::::::::::SECTION4 END:::::::::::::::::::::::::*/
+
+
+@media screen and (min-width:1170px){
+
+/*++++++++++++++++++++++++SECTION1+++++++++++++++++++++++*/
+.head{
+	padding:5% 0;
+}
+/*+++++++++++++++++++++++SECTION1 END++++++++++++++++++++++++*/
+
+/*=======================SECTION2============================*/
+.text{
+	text-align:left;
+	width:50%;
+}
+.flex2{
+	display:flex;
+	justify-content:space-between;
+	flex-flow:row wrap;
+}
+.section2 img{
+	padding:0 0 0 10rem;
+}
+.section2 h3,h4{
+	font:700 24px/24px raleway;
+	margin:0 0 1rem 0;
+}
+/*========================SECTION2 END========================*/
+
+/*iiiiiiiiiiiiiiiiiiiiiiSECTION4iiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+
+.section4 .images{
+	width:25%;
+	overflow:hidden;
+}
+.section4 .items{
+	top:-100%;
+}
+.section4 .images:hover .items{
+	top:0;
+	transition:all .3s;
+}
+/*iiiiiiiiiiiiiiiiiiiiiSECTION4 ENDiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+}
+
+

@@ -1,0 +1,580 @@
+/* GLOBAL STYLES
+------------------------------------------------------
+----------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+    background:#ffffff;
+}
+
+
+/* #HEADER
+______________________________________*/
+#header{
+	padding: 0 0 2rem;
+}
+#header .logo{
+	display: block;
+	background: url('../images/design/Author.png') center/cover no-repeat;
+	width: 120px;
+	height: 37px;
+	margin: 5% 0 0 5%;
+}
+.wrap{
+	position: relative;
+}
+.nav{
+	overflow: hidden;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    transition: 1s;
+}
+.active{
+	height: 230px;
+}
+.wrap .menu{
+	padding: 5% 0 0;
+}
+.wrap .menu .item{
+	text-decoration: none;
+	font:2rem/2rem 'Open Sans', sans-serif;
+	color:#484c55;
+}
+.wrap .menu li{
+	margin: 0 0 1.5rem;
+}
+
+/*    HUMB     */
+.humb{
+	display: block;
+	position: absolute;
+	transition: 1s;
+	width:30px;
+	height: 24px;
+	border-top:4px solid #485460;
+	border-bottom: 4px solid #485460;
+	top:-2.5rem;
+	right: 5%;
+}
+.humb::after{
+	position: absolute;
+	content: '';
+	width: 30px;
+	height:6px;
+	bottom: 0;
+	left: 0;
+	border-top: 4px solid #485460;
+}
+.rotate{
+	transform:rotate(90deg);
+}
+
+/* #HEADER END
+______________________________________*/
+
+
+/* SECTION SLICK
+===================================*/
+.slick{
+	overflow: hidden;
+}
+.slide{
+	position: relative;
+}
+.slick .mask{
+	position: absolute;
+	top:0;
+	left:0;
+	content: '';
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow:column nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.h1,.text,.more{
+	font:3rem/3rem 'Open Sans', sans-serif;
+	color:#ffffff;
+}
+.slick .text{
+	font:1.6rem/2rem 'Open Sans',sans-serif;
+}
+.slick .more{
+	text-decoration: none;
+	font:1.8rem/2rem 'Open Sans',sans-serif;
+	padding: .8rem 1rem;
+	border:2px solid #fff;
+	border-radius: 5px;
+}
+/*Button*/
+.slick .slick-prev{
+	position: absolute;
+	left: -50%;
+	outline: none;
+}
+.slick .slick-next{
+	position: absolute;
+	top:45%;
+	right: -50%;
+	outline: none;
+}
+
+/* SECTION SLICK  END
+===================================*/
+
+/*SECTION TEAM
+.................................*/
+
+.team{
+	padding: 7% 5%;
+}
+.h2{
+	font:3rem/3rem 'Open Sans',sans-serif;
+	color: #4e525d;
+	text-align: center;
+	margin: 0 0 3rem;
+}
+.team .name{
+	text-align: center;
+	margin: 0 0 3rem;
+}
+.team .photo{
+	width: 200px;
+	height: 200px;
+	background-color: rgb(238,238,240);
+	border-radius: 50%;
+	position: relative;
+	margin:0 auto 2rem;
+}
+.team img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.team .link{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+.team .plus{
+	position: absolute;
+	top:calc(50% - 21px);
+	left:calc(50% - 21px);
+	background: url('../images/design/+.png') center/cover no-repeat;
+	width: 42px;
+	height: 41px;
+}
+.team .h4{
+	font:2.2rem/2.2rem 'Open Sans',sans-serif;
+	color:#4e525d;
+	margin: 0 0 .5rem;
+}
+.team p{
+	font:1.4rem/1.4rem 'Open Sans',sans-serif;
+	color:#4e525d;
+}
+.team .about{
+	margin: 0 0 2rem;
+}
+
+/*SECTION  TEAM     END
+.................................*/
+
+
+/*SECTION PRICE
+***********************************/
+.price{
+	background-color:rgb(241,241,241);
+	padding: 10% 0 5%;
+	overflow: hidden;
+}
+.price .select{
+	width: 320px;
+	text-align: center;
+	margin: 0 auto 2rem;
+}
+.price h3{
+	font:2.6rem/2.6rem 'Open Sans',sans-serif;
+	color:#ffffff;
+	padding: 2.5rem 0;
+}
+.basic,.pro,.premium{
+	background-color: rgb(72,84,96);
+}
+.price .money{
+	font:2rem/2rem 'Open Sans',sans-serif;
+	color:#485460;
+	background-color: rgb(248,249,251);
+	padding: 2.5rem 0;
+	border-bottom: 1px solid #ecf0f1;
+}
+.price .text{
+	font:1.4rem/1.4rem 'Open Sans',sans-serif;
+	color:#8c9299;
+	background-color:rgb(255,255,255);
+	padding: 1.7rem 0;
+	border-bottom: 1px solid #ecf0f1;
+}
+.price .link{
+	background-color:rgb(248,249,251);
+	padding: 4rem 0;
+}
+.price .buy1,.buy2,.buy3{
+	text-decoration: none;
+	font:600 1.7rem/1.7rem 'Open Sans',sans-serif;
+	color:#ffffff;
+	padding: 1.2rem 5rem;
+	background-color: rgb(120,132,146);
+	border-radius: 4px;
+}
+
+
+/*SECTION PRICE END
+***********************************/
+
+/*SECTION CONTACT
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.contact{
+	background: url('../images/design/contact us.jpg') center/cover no-repeat;
+	padding: 5% 5% 10%;
+}
+.contact .h2{
+	color:#ffffff;
+}
+.h5{
+	font:2rem/2rem 'Open Sans',sans-serif;
+	color:#ffffff;
+	margin: 0 0 1.5rem;
+}
+.inform .text{
+	font: 1.4rem/1.4rem 'Open Sans',sans-serif;
+	color:#939393;
+	margin: 0 0 4rem;
+}
+.inform .link{
+	margin: 0 0 1.5rem;
+}
+.inform .facebook{
+	background: url(../images/design/facebook.png) center/cover no-repeat;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin: 0 1.5rem  0 0;
+}
+.inform .twitter{
+	background: url(../images/design/twitter.png) center/cover no-repeat;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin: 0 1.5rem  0 0;
+}
+.inform .google{
+	background: url(../images/design/g+.png) center/cover no-repeat;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 1.5rem  0 0;
+}
+.inform .mail{
+	font:1.4rem/1.4rem 'Open Sans',sans-serif;
+	color:#bface2;
+	margin: 0 0 1.2rem;
+}
+.inform .mail:last-child{
+	margin: 0 0 4rem;
+}
+/*FORM*/
+.theform .name,.email,.message{
+	width:100%;
+	height: 45px;
+	border-radius: 2px;
+	border:none;
+	font:1.6rem/1.6rem 'Open Sans',sans-serif;
+	padding: 0 2rem;
+	margin: 0 0 2rem;
+}
+.theform .message{
+	height: 12rem;
+	margin: 0 0 3.5rem;
+	padding: 2rem;
+	resize: none;
+	display: block;
+}
+.contact .send{
+	font:2.2rem/2.2rem 'Open Sans',sans-serif;
+	text-decoration: none;
+	color:#ffffff;
+	padding: 1rem 5.5rem;
+	background-color: rgb(73,203,205); 
+	border-radius: 2px;
+}
+.contact .click{
+	text-align: right;
+}
+
+
+/*SECTION CONTACT END
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+/*  min-width 768px */
+@media screen and (min-width:768px){
+	
+	/*HEADER*/
+#header{
+	padding: 0 0 5%;
+}
+.wrap .menu .item{
+	font:3rem/3rem 'Open Sans', sans-serif;
+}
+.wrap .menu li{
+	margin: 0 0 2rem;
+}
+.active{
+	height: 340px;
+}
+	/*HEADER END*/
+
+
+/* SECTION SLICK    
+-============================*/
+.slick .mask{
+	padding: 5% 0;
+}
+.h1,.text,.more{
+	font:6.3rem/6.3rem 'Open Sans', sans-serif;
+}
+.slick .text{
+	font:2.3rem/2.3rem 'Open Sans',sans-serif;
+}
+.slick .more{
+	font:2.6rem/2.6rem 'Open Sans',sans-serif;
+	padding: 2rem 4rem 2.2rem;
+}
+
+/* SECTION SLICK    END
+-============================*/
+
+/*SECTION TEAM
+.................................*/
+.team{
+	padding: 5% 0;
+}
+.h2{
+	font:4.2rem/4.2rem 'Open Sans',sans-serif;
+	margin: 0 0 8rem;
+}
+.flex{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.team .name{
+	width:calc((100% - 20%)/2);
+}
+
+/*SECTION TEAM END
+.................................*/
+
+/*SECTION PRICE
+***********************************/
+.price{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	padding: 7% 0 2%;
+}
+.price .select{
+	margin: 0 0 4rem;
+	width:350px;
+}
+
+/*SECTION PRICE END
+***********************************/
+
+/*SECTION CONTACT
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.contact .flex{
+	flex-flow:row nowrap;
+}
+.contact article{
+	width:calc((100% - 10%)/2);
+}
+
+/*SECTION CONTACT END
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+}
+
+
+/*  min-width 1170px */
+@media screen and (min-width:1170px){
+	
+	/*HEADER*/
+#header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 0 2%;
+}
+#header .logo{
+	margin: 2.8rem 0 0;	
+}
+.wrap{
+	padding: 0 0 0 10%;
+}	
+.wrap .nav{
+	overflow: visible;
+}
+.wrap .menu{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap .menu .item{
+	font:1.5rem/1.5rem 'Open Sans', sans-serif;
+	padding: 3.9rem 2.5rem;
+	transition: .5s;
+}
+.wrap .menu .item:hover{
+	color:#49cbcd;
+	background-color:rgb(248,249,251);
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(73,203,205,1);
+-moz-box-shadow: 0px 3px 0px 0px rgba(73,203,205,1);
+box-shadow: 0px 3px 0px 0px rgba(73,203,205,1);
+}
+.wrap .menu li{
+	margin: 0;
+}
+.humb{
+	display: none;
+}
+
+	/*HEADER END*/
+
+
+/* SECTION SLICK 
+===================================*/
+
+	/*Button*/
+.slick .slick-prev,.slick-next{
+	text-indent: -9999px;
+	border-radius: 50%;
+	background-color: rgb(254,254,254);
+	position: absolute;
+	z-index: 2;
+	border:none;
+	top:45%;
+	-webkit-box-shadow: 0px 0px 0px 12px rgba(254,254,254,1);
+-moz-box-shadow: 0px 0px 0px 12px rgba(254,254,254,1);
+box-shadow: 0px 0px 0px 12px rgba(254,254,254,1);
+}
+.slick .slick-prev{
+	background: url('../images/design/back.png') center/cover no-repeat;
+	width: 24px;
+	height: 24px;
+	background-color:rgb(254,254,254);
+	left:2%;
+	
+}
+.slick .slick-next{
+	background: url('../images/design/next.png') center/cover no-repeat;
+	width: 24px;
+	height: 24px;
+	background-color:rgb(254,254,254);
+	right: 2%;
+}
+
+/* SECTION SLICK  END
+===================================*/
+
+	
+	/*SECTION TEAM
+.................................*/
+.team{
+	padding: 5%;
+}
+.team .h2{
+	margin: 0 0 10rem;
+}
+.team .name{
+	width:calc((100% - 20%)/4);
+}
+.team .link{
+	display: none;
+}
+.team .photo:hover .link{
+	display: block;
+}
+.team .about{
+	margin: 0 0 4rem;
+}
+/*    SECTION TEAM  END
+.................................*/
+
+
+/*SECTION PRICE
+***********************************/
+
+.price{
+	padding: 7% 5% 5%;
+}
+.price .select{
+	margin: 0;
+	width:370px;
+	margin: 0 0 3rem;
+}
+.price .buy1:hover{
+	background-color:rgb(73,203,205);
+}
+.price .buy2:hover{
+	background-color:rgb(73,203,205);
+}
+.price .buy3:hover{
+	background-color:rgb(73,203,205);
+}
+.hover{
+	background-color: rgb(73,203,205);
+}
+
+/*SECTION PRICE END
+***********************************/
+
+/*SECTION CONTACT
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.contact{
+	padding: 5% 5% 8%;
+}
+.contact .h2{
+	margin: 0 0 10rem;
+}
+.theform .name,.email{
+	width:47%;
+}
+.theform .email{
+	margin: 0 0 3rem 5%;
+}
+.theform .message{
+	margin: 0 0 4.5rem;
+	height: 18rem;
+}
+
+/*SECTION CONTACT END
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+}

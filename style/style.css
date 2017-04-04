@@ -1,0 +1,267 @@
+/* GLOBAL STYLES
+------------------------------------------------------
+----------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+    background:#ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* #HEADER
+______________________________________*/
+
+#header{
+	background-color:rgb(45,39,49);
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	align-items: center;
+	padding: 1% 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+.h1{
+	font:30px/30px 'Raleway',sans-serif;
+	color: #507f85;
+	padding: 1rem;
+}
+#header .link{
+	display: flex;
+	justify-content: space-around;
+	width: 65%;
+}
+#header .link a{
+	height: 40px;
+	width: 40px;
+	display: block;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
+box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
+border-radius: 50%;
+}
+#header .vk{
+	background: url('../images/design/vk.png') center/cover no-repeat;
+	border-radius:50%;
+	border:2px solid #00d09c;
+}
+
+#header .in{
+	background: url('../images/design/in.png') center/cover no-repeat;
+}
+#header .github{
+	background: url('../images/design/git2.png') center/cover no-repeat;
+}
+#header .insta{
+	background: url('../images/design/insta.png') center/cover no-repeat;
+}
+#header .f{
+	background: url('../images/design/f.png') center/cover no-repeat;
+}
+
+
+/* #HEADER END
+______________________________________*/
+
+/* PORTFOLIO
+===========================*/
+
+.portfolio{
+	background: #d5d3d3;
+	padding: 35% 0 5%;
+}
+.portfolio .h2{
+	font:40px/40px 'Raleway',sans-serif;
+	color:#000;
+	text-align: center;
+	position: relative;
+}
+.portfolio .h2:before{
+	position: absolute;
+	content: '';
+	left: calc(50% - 35px);
+	bottom: -1rem;
+	width:70px;
+	background-color:rgb(80,127,133);
+	height: 2px;
+}
+.portfolio .items{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	padding: 10% 0 0;
+}
+.portfolio .img{
+	width: calc(100% - 5%);
+	margin: 0 0 4rem;
+	position: relative;
+	overflow: hidden;
+}
+.portfolio .img img{
+	filter:grayscale(100%);
+	transition: .5s;
+}
+.portfolio .link{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	text-decoration: none;
+	padding: 10%;
+	transition: .5s;
+	background-color: rgba(70,100,100,.5);
+}
+.portfolio .link .h3{
+	font:600 40px/40px 'Raleway',sans-serif;
+	color: #fff;
+	text-align: center;
+	transition: .5s;
+	position: absolute;
+	width: 80%;
+	top:25%;
+}
+.portfolio .aside{
+	position: absolute;
+	bottom:20%;
+	width: 80%;
+	text-align: center; 
+	padding: 5% 0;
+	transition: .5s ease;
+	transform: scale(1);
+	background-color: rgb(20,246,210);
+}
+.portfolio .aside p{
+	font:20px/20px 'Raleway',sans-serif;
+	color: #000;
+}
+
+/* PORTFOLIO
+==============================*/
+
+/* FOOTER
+FFFFFFFFFFFFFFFFFFFFFFFFFFF*/
+
+.footer{
+	padding: 2%;
+}
+.footer .text{
+	font:18px/20px 'Raleway',sans-serif;
+	margin: 0 0 1rem;
+	color:#aaa;
+}
+.footer b{
+	color:#507f85;
+	color:#;
+}
+/* FOOTER
+FFFFFFFFFFFFFFFFFFFFFFFFFFF*/
+
+
+@media screen and (min-width:768px){
+
+#header .link{
+	width: 30%;
+}
+.portfolio{
+	padding: 12% 0 5%;
+}
+.portfolio .items{
+	padding: 5% 0 0;
+}
+.portfolio .img{
+	width: calc(100% - 15%);
+}
+.portfolio .aside p{
+	font:25px/25px 'Raleway',sans-serif;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3%;
+}
+
+
+}
+
+
+
+@media screen and (min-width:1170px){
+
+#header .link{
+	width: 20%;
+}
+#header .link a{
+	transition: .3s;
+}
+#header .link a:hover{
+	transform: scale(1.1);
+}
+
+.portfolio{
+	padding: 8% 5% 3%;
+}
+.portfolio .h2{
+	font:45px/45px 'Raleway',sans-serif;
+}
+.portfolio .img{
+	width: calc((100% - 15%)/2);
+}
+
+
+.portfolio .img img{
+	filter: grayscale(0);
+}
+.portfolio .link{
+	background-color: rgba(50,50,50,.3);
+}
+.portfolio .link .h3{
+	filter:blur(5px);
+	top:-15%;
+}
+.portfolio .aside{
+	filter: blur(5px);
+	bottom: -25%;
+	transform: scale(0.5);
+}
+
+.portfolio .img:hover img{
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+.portfolio .img:hover .link{
+	background-color: rgba(70,100,100,.5);
+-webkit-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+-moz-box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+box-shadow: inset 0px 0px 0px 5px rgba(255,255,255,1);
+}
+.portfolio .img:hover .h3{
+	top:25%;
+	filter: blur(0);
+}
+.portfolio .img:hover .aside{
+	filter: blur(0);
+	bottom: 20%;
+	background-color: rgb(20,246,210);
+	transform: scale(1);
+}
+
+
+.footer{
+	padding: 1% 8%;
+}
+
+
+
+
+}
