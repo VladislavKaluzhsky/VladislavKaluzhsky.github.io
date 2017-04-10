@@ -42,9 +42,9 @@ ______________________________________*/
 	width: 40px;
 	display: block;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
--moz-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
-border-radius: 50%;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,208,156,0.5);
+    border-radius: 50%;
 }
 #header .vk{
 	background: url('../images/design/vk.png') center/cover no-repeat;
@@ -142,7 +142,7 @@ ______________________________________*/
 	color: #000;
 }
 
-/* PORTFOLIO
+/* PORTFOLIO END
 ==============================*/
 
 /* FOOTER
@@ -158,9 +158,12 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFF*/
 }
 .footer b{
 	color:#507f85;
-	color:#;
 }
-/* FOOTER
+.footer .text1{
+	font:16px/20px 'Raleway',sans-serif;
+	color:#aaa;
+}
+/* FOOTER   END
 FFFFFFFFFFFFFFFFFFFFFFFFFFF*/
 
 
